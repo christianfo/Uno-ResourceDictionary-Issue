@@ -1,0 +1,15 @@
+﻿<ResourceDictionary
+    x:Class="UnoApp1.ResourceDictionaryWithCodeBehind1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UnoApp1">
+
+  <DataTemplate x:Key="MyDataTemplate" x:DataType="local:MyDataType">
+    <StackPanel>
+      <TextBlock Text="{x:Bind Text}" />
+      <Button Margin="0,20,0,0" Click="Button_Click" >Click Me!</Button>
+      <ToggleSwitch Margin="0,20,0,0" Header="Toggle me!" Toggled="{x:Bind Switch_Toggled}" />
+    </StackPanel>
+  </DataTemplate>
+
+</ResourceDictionary>
